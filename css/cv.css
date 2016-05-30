@@ -391,10 +391,10 @@ ul {
     top: -40px;
 }
 #education-timeline:before {
-    margin-bottom: 84px;
+    margin-bottom: 3rem;
 }
-#education-timeline li:last {
-    height: 1px;
+#education-timeline li:last-child {
+    height: 1rem;
 }
 
 /* LANGUAGES */
