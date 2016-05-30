@@ -26,7 +26,12 @@ page.open(sourceUri, function() {
         timeout: 10000,
         check: function () {
             return page.evaluate(function() {
-                return finished || false;
+                $.each(finished, function(idx, item) {
+                    console.log(item);
+                    if (!item)
+                        return false;
+                });
+                return true;
             });
         },
         success: function () {
