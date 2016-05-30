@@ -1,0 +1,54 @@
+{
+    "title": "Expériences professionnelles",
+    "items": [
+  {
+    "title":"Développeur .Net ",
+    "body_html":" <!--Migration des applications métier : <br/> -->Fusion de deux progiciels vers \"EasyPay\" <br>Migration de l'application \"Titre-Service\" <br>Réécriture du site <a href=\"http://tracegroup.be\"> tracegroup.be</a> <br> Implémentation d'un CMS intranet<br> Réécriture de la gestion des offres <br>Création de rapports personnalisés <br> Formation et aide aux utilisateurs <br>",
+    "organisation":"TRACEGROUP S.A.",
+    "location":"Charleroi",
+    "date":"2012-2015"
+  },
+  {
+    "title":"Développeur .Net ",
+    "body_html":"Réécriture du site <a href=\"http://www.yourtour.com\">YourTour.com</a> dans une équipe de trois développeurs, en collaboration avec un service mathématique. <br>Architecture et définition des standards <br>Modélisation des bases de données <br>Implémentation des fonctionnalités <br>",
+    "organisation":"deciZium S.A.",
+    "location":"Mons",
+    "date":"2008-2012"
+  },
+  {
+    "title":"Technicien informatique ",
+    "body_html":"Conseil clientèle, vente, montage <br>  Dépannages, installations à domicile <br>",
+    "organisation":"TIPGROUP S.A.",
+    "location":"Mons",
+    "date":"2003-2005"
+  },
+  {
+    "title":"Technicien/vendeur informatique",
+    "body_html":"Accueil, vente, montage <br>Dépannages et installations à domicile<br>",
+    "organisation":"OCTET S.A.",
+    "location":"Thumaide",
+    "date":"2002"
+  },
+  {
+    "title":"Technicien informatique (stage)",
+    "body_html":"Montage, dépannage et conseil clientèle ",
+    "organisation":"AssistPC",
+    "location":"Fleurus",
+    "date":"2002"
+  },
+  {
+    "title":" Electricien/Instrumentiste ",
+    "body_html":"Maintenance des infrastructures sur site <br>",
+    "organisation":"Woodchem S.A.",
+    "location":"Hautrage",
+    "date":"2001-2002"
+  },
+  {
+    "title":"Technicien réseau câble",
+    "body_html":"Technicien réseau câble sur AutoCAD",
+    "organisation":"Belgacom",
+    "location":"Bruxelles",
+    "date":"1999-2000"
+  }
+]
+}
