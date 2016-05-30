@@ -1,7 +1,9 @@
+var $j = $j || {};
+
 (function(global) {
        
     /* Contact Infos */
-    if (document.getElementById('contacts').childElementCount == 0)
+    if (document.getElementById('contacts').childElementCount == 0 && $j.addContacts)
     {
         var request = new XMLHttpRequest();
         request.open('GET', '../json/contact_info.json', true);
@@ -34,13 +36,13 @@
                 var _contacts = ["<ul>"]; 
                 _contacts.push(["<li>", dt('name'),"</li>"].join(''));
                 _contacts.push(["<li>", icon('envelope'), ' : ', mail(),"</li>"].join(''));
-                _contacts.push(["<li>", icon('earphone'), ' : ', dt('phone'),"</li>"].join(''));
-                _contacts.push(["<li>", icon('globe'), ' : ', dt('address'),"</li>"].join(''));
+                _contacts.push(["<li class='removable'>", icon('earphone'), ' : ', dt('phone'),"</li>"].join(''));
+                _contacts.push(["<li class='removable'>", icon('globe'), ' : ', dt('address'),"</li>"].join(''));
                 _contacts.push("</ul>");
                 
                 document.getElementById("contacts").innerHTML = _contacts.join('');
                 
-                var _infos = ["<ul>"]; 
+                var _infos = ["<ul class='removable'>"]; 
                 _infos.push(["<li>", dt('birth_date'),"</li>"].join(''));
                 _infos.push(["<li>", dt('nationality'),"</li>"].join(''));
                 _infos.push(["<li>", dt('status'),"</li>"].join(''));

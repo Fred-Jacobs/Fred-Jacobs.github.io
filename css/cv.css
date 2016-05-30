@@ -333,6 +333,7 @@ ul {
     width: 50%;
     text-align: center;
     height: 100px;
+    padding-left: 24px;
 }
 .timeline-heading h4 {
     font-weight: 400;

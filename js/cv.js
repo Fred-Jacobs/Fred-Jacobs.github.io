@@ -58,7 +58,8 @@ $j.wordcloud = function(cloud) {
         rotateRatio: 1,
         gridSize: 10,
         weightFactor: 2,
-        fontFamily: 'Calibri, Finger Paint, cursive, sans-serif',
+        fontFamily: 'Calibri, cursive, sans-serif',
+        // fontFamily: 'Calibri, Finger Paint, cursive, sans-serif',
         // color: function(word, weight, fontSize, distance, theta){
         //     return 'blue';
         // },
@@ -124,6 +125,20 @@ $j.appendTimeline = function(opts) {
         window.location.search.replace(new RegExp("([^?=&]+)(=([^&]*))?", "g"), function ($0, $1, $2, $3) { qs[$1] = $3; });
     }
     
+    /* Words Tag Cloud */
+    var cloud = document.getElementById('proficiency-tag-cloud-html');
+    if (qs["cloud"] || cloud.childElementCount == 0) {
+        if (cloud.childElementCount == 0)  
+            $j.wordcloud(cloud);
+        else
+            finished = true;
+            
+        if (qs["cloud"])    
+            return;
+    }
+    
+    $j.addContacts = true;
+    
     var lang = qs["lang"] || "fr";
     
     $("html").data("lang", lang);
@@ -146,12 +161,6 @@ $j.appendTimeline = function(opts) {
         
     });
     
-    /* Words Tag Cloud */
-    var cloud = document.getElementById('proficiency-tag-cloud-html');
-    if (cloud.childElementCount == 0 && $j.wordcloud)  
-        $j.wordcloud(cloud);
-    else
-        finished = true;
      
  
     /* Experiences & education */
@@ -196,5 +205,7 @@ $j.appendTimeline = function(opts) {
     /* Clean up generators */
     $(".removable-script").remove();
     // $("#templates").remove();
+    
+    finished = true;
     
 })(window, jQuery);

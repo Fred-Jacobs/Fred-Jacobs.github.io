@@ -13,8 +13,13 @@ page.paperSize = {
 };
 page.zoomFactor = 1;
 
+page.onConsoleMessage = function(msg) {
+  console.log(msg);
+}
+
 console.log('Open ' + sourceUri);
 page.open(sourceUri, function() {
+    console.log('Wait for ' + sourceUri);
   
     waitFor({
         debug: true,
@@ -30,8 +35,8 @@ page.open(sourceUri, function() {
             page.render(destinationPdf);
             
             page.evaluate(function() {
-                $("#contacts").html('');
-                $("#infos").html('');
+                $("#contacts .removable").remove();
+                $("#infos .removable").remove();
             });
             
             console.log('Save ' + destinationHtml);

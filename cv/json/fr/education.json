@@ -1,58 +1,59 @@
+
 {
     "title": "Education",
     "items": [
   {
-    "title":"Mobile oriented .Net developer",
-    "body_html":"Taught by Wavenet and Tryptic",
+    "title":"Développeur .Net orienté Mobile",
+    "body_html":" Dispensé par Wavenet et Tryptic <br>",
     "organisation":"TechnocITé",
     "location":"Mons",
     "date":"2016"
   },
   {
-    "title":"Intensive training .Net Developer",
-    "body_html":"Taught by Wavenet and IT-Optics",
+    "title":"Formation intensive de Développeur .Net ",
+    "body_html":"Dispensé par Wavenet et IT-Optics <br> ",
     "organisation":"TechnocITé",
     "location":"Mons",
     "date":"2008"
   },
   {
-    "title":"Linux Administration Training",
-    "body_html":" 2 months",
+    "title":"Formation Administration Linux",
+    "body_html":" 2 mois<br>",
     "organisation":"TechnocITé",
     "location":"Mons",
     "date":"2008"
   },
   {
-    "title":"PC Manager - Networks training",
-    "body_html":"6 month with internship",
+    "title":"Formation de Gestionnaire PC et Réseaux",
+    "body_html":"6 mois avec stage<br>",
     "organisation":"TechnofuturTIC",
     "location":"Gosselies",
     "date":"2002"
   },
   {
-    "title":"Electronics and Telecommunications",
-    "body_html":"Skills training Belgacom",
+    "title":"Electronique et télécommunications",
+    "body_html":" Formation qualifiante Belgacom<br>",
     "organisation":"Charleroi",
     "location":"Bruxelles",
     "date":"1999"
   },
   {
-    "title":"Analyst Programmer",
-    "body_html":"Further Education",
+    "title":"Analyste-Programmeur",
+    "body_html":"Enseignement de promotion sociale<br>",
     "organisation":"ICET",
     "location":"Cuesmes",
     "date":"1998-1999"
   },
   {
-    "title":"Computer candidacy",
-    "body_html":"Algorithm and information sciences",
+    "title":"Candidature en Informatique ",
+    "body_html":" Algorithmie et sciences de l'information<br>",
     "organisation":"UMons",
     "location":"Mons",
     "date":"1996-1998"
   },
   {
-    "title":"General humanities",
-    "body_html":"Mathematics-Science",
+    "title":"Humanités générales",
+    "body_html":"Mathématiques-Sciences <br>",
     "organisation":"St Joseph",
     "location":"St-Ghislain",
     "date":"1989-1996"

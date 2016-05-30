@@ -754,6 +754,7 @@ if (!window.clearImmediate) {
           var styleRules = {
             'position': 'absolute',
             'display': 'block',
+            'whiteSpace': 'nowrap',
             'font': settings.fontWeight + ' ' +
                     (fontSize * info.mu) + 'px ' + settings.fontFamily,
             'left': ((gx + info.gw / 2) * g + info.fillTextOffsetX) + 'px',
@@ -761,7 +762,6 @@ if (!window.clearImmediate) {
             'width': info.fillTextWidth + 'px',
             'height': info.fillTextHeight + 'px',
             'lineHeight': fontSize + 'px',
-            'whiteSpace': 'nowrap',
             'transform': transformRule,
             'webkitTransform': transformRule,
             'msTransform': transformRule,
