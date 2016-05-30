@@ -26,12 +26,10 @@ page.open(sourceUri, function() {
         timeout: 10000,
         check: function () {
             return page.evaluate(function() {
-                $.each(finished, function(idx, item) {
-                    console.log(item);
-                    if (!item)
-                        return false;
-                });
-                return true;
+                if (finished && finished.cloud)
+                    return true;
+                    
+                return false;
             });
         },
         success: function () {

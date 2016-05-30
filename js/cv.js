@@ -132,18 +132,17 @@ $j.appendTimeline = function(opts) {
     
     /* Words Tag Cloud */
     var cloud = document.getElementById('proficiency-tag-cloud-html');
-    if (qs["cloud"] || cloud.childElementCount == 0) {
-        finished.cloud = false;
-        
+    finished.cloud = false;
+    if (qs["cloud"]) {
+        $j.wordcloud(cloud);
+        return;
+    } else {
         if (cloud.childElementCount == 0)  
             $j.wordcloud(cloud);
         else {
             finished.cloud = true;
             console.log("Cloud already generated");
         }
-            
-        if (qs["cloud"])    
-            return;
     }
     
     finished.text = false;
@@ -175,8 +174,6 @@ $j.appendTimeline = function(opts) {
         console.log("Text generated");
     });
     
-     
- 
     /* Experiences & education */
     if ($j.appendTimeline) { 
         
@@ -219,12 +216,11 @@ $j.appendTimeline = function(opts) {
     // var jobs = JSON.stringify(entries[0]);
     // var education = JSON.stringify(entries[1]);
     
-    /* Clean up generators */
-    $(".removable-script").remove();
-    // $("#templates").remove();
-    
     finished.global = true;
     console.log("End");
     // finished = true;
     
+    /* Clean up generators */
+    $(".removable-script").remove();
+    // $("#templates").remove();
 })(window, jQuery);
