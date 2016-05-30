@@ -1,5 +1,7 @@
 
-var finished = false;
+var finished = {
+    global: false
+};
 var $j = $j || {};
 
 $j.wordcloud = function(cloud) {
@@ -73,7 +75,8 @@ $j.wordcloud = function(cloud) {
     });
     
     cloud.addEventListener("wordcloudstop", function(evt) {
-        finished = true;
+        finished.cloud = true;
+        console.log("Cloud generated");
     });
 };
 
@@ -120,6 +123,8 @@ $j.appendTimeline = function(opts) {
 
 (function(global, $) {
     
+    finished.global = false;
+    
     var qs = {};
     if ('undefined' != typeof window.location.search) {
         window.location.search.replace(new RegExp("([^?=&]+)(=([^&]*))?", "g"), function ($0, $1, $2, $3) { qs[$1] = $3; });
@@ -128,14 +133,21 @@ $j.appendTimeline = function(opts) {
     /* Words Tag Cloud */
     var cloud = document.getElementById('proficiency-tag-cloud-html');
     if (qs["cloud"] || cloud.childElementCount == 0) {
+        finished.cloud = false;
+        
         if (cloud.childElementCount == 0)  
             $j.wordcloud(cloud);
-        else
-            finished = true;
+        else {
+            finished.cloud = true;
+            console.log("Cloud already generated");
+        }
             
         if (qs["cloud"])    
             return;
     }
+    
+    finished.text = false;
+    finished.timeline = false;
     
     $j.addContacts = true;
     
@@ -159,6 +171,8 @@ $j.appendTimeline = function(opts) {
         if (data["citation"])
             $("#citation").html(data["citation"]);
         
+        finished.text = true;
+        console.log("Text generated");
     });
     
      
@@ -179,6 +193,9 @@ $j.appendTimeline = function(opts) {
             fileName: 'education.json',
             lang: lang,
         });
+        
+        finished.timeline = true;
+        console.log("Timelines generated");
     }
     
     // $('head').append(['<style>', '#work-experience-timeline', ':before{height:', $tmpl.height(), ' !important;}</style>'].join(''));
@@ -206,6 +223,8 @@ $j.appendTimeline = function(opts) {
     $(".removable-script").remove();
     // $("#templates").remove();
     
-    finished = true;
+    finished.global = true;
+    console.log("End");
+    // finished = true;
     
 })(window, jQuery);
