@@ -55,7 +55,7 @@ page.open(sourceUri, function() {
                     // console.log(item.style);
                     $.each(ruleLoop, function (_idx, ruleItem) {
                         if (ruleItem[0] == "-"){
-                            _ruleStriped = ruleItem.replace('-webkit-', '');
+                            var _ruleStriped = ruleItem.replace('-webkit-', '');
                             $.each(rulePrefixLoop, function (i, prefix) {
                                 _rules.push([prefix, _ruleStriped, ": ", item.style[ruleItem], "; "].join(''));    
                             });
