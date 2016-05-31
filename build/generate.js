@@ -23,12 +23,12 @@ page.open(sourceUri, function() {
   
     waitFor({
         debug: true,
-        interval: 10,
+        interval: 300,
         timeout: 10000,
         check: function () {
             return page.evaluate(function() {
                 $.each(finished, function(idx, item) {
-                    console.log(item);
+                    // console.log(item);
                     if (!item)
                         return false;
                 });

@@ -261,7 +261,7 @@ ul {
 }
 .timeline > li > .timeline-panel:before {
     position: absolute;
-    top: 5px;
+    top: 6px;
     right: -15px;
     display: inline-block;
     border-top: 15px solid transparent;
@@ -272,7 +272,7 @@ ul {
 }
 .timeline > li > .timeline-panel:after {
     position: absolute;
-    top: 6px;
+    top: 7px;
     right: -14px;
     /*display: inline-block;*/
     display: none;
@@ -373,11 +373,11 @@ ul {
 }
 
 /* TIMELINE OVERRIDES */
-#experience-container, #education-container {
+#experience-container, #education-container, #other-container {
     position: relative;
 }
 #education-container .timeline-title {
-    top: -10px;
+    /*top: -10px;*/
 }
 
 #work-experience-timeline .timeline-inverted {
@@ -388,26 +388,28 @@ ul {
 }
 
 #education-timeline .timeline-inverted {
-    top: -40px;
+    top: -30px;
 }
 #education-timeline:before {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 #education-timeline li:last-child {
     height: 1rem;
 }
 
+
+#other-container  {
+    top: 16px;
+}
+#other-timeline .timeline-inverted {
+    top: -74px;
+}
+#other-timeline:before {
+    margin-bottom: 10rem;
+}
+
 /* LANGUAGES */
-#languages-container {
-    position: relative;
-    width: 50%;
-    height: 200px;
-    /*top: 0;*/
-    top: -20px;
-}
-#languages {
-    
-}
+
 
 
 #templates {

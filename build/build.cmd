@@ -1,7 +1,7 @@
 @echo off
 cls
 
-set templatePath=http://localhost/fred/cv/template/clouded.html
+set templatePath=http://localhost/fred/cv/template/cv.html
 
 phantomjs generate.js "%templatePath%?lang=fr" "../cv/fr/Fred-Jacobs.dotNet.pdf" "../cv/fr/index.html"
 

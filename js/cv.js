@@ -191,6 +191,13 @@ $j.appendTimeline = function(opts) {
             lang: lang,
         });
         
+        $j.appendTimeline({
+            id: "other-timeline",
+            appendTo: "other-container",
+            fileName: 'other.json',
+            lang: lang,
+        });
+        
         finished.timeline = true;
         console.log("Timelines generated");
     }

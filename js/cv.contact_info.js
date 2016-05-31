@@ -3,7 +3,7 @@ var $j = $j || {};
 (function(global) {
        
     /* Contact Infos */
-    if (document.getElementById('contacts').childElementCount == 0 && $j.addContacts)
+    if (document.getElementById('contacts').childElementCount == 0)
     {
         var request = new XMLHttpRequest();
         request.open('GET', '../json/contact_info.json', true);

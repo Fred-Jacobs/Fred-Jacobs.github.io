@@ -1,0 +1,34 @@
+
+{
+    "title": "Divers",
+    "items": [
+  {
+    "title":"Language skills",
+    "body_html":"French: Native <br> English: Advanced <br> Dutch: Simple understanding",
+    "organisation": null,
+    "location": null,
+    "date": null
+  },
+  {
+    "title":"Strengths",
+    "body_html":"Personal vehicle <br> Stress resistant <br> Flexible and dynamic <br>",
+    "organisation": null,
+    "location": null,
+    "date": null
+  },
+  {
+    "title":"Hobbies",
+    "body_html":"Passion for computers and new technologies. <br> Puzzles, logical tests, cryptography, steganography, etc.",
+    "organisation": null,
+    "location": null,
+    "date": null
+  },
+  {
+    "title":"This document",
+    "body_html":"<a href='https://github.com/Fred-Jacobs/Fred-Jacobs.github.io'>Fork me on GitHub</a>",
+    "organisation": null,
+    "location": null,
+    "date": null
+  }
+]
+}

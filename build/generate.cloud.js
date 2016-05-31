@@ -42,6 +42,7 @@ page.open(sourceUri, function() {
                 var $container = $(containerId);
                 
                 var rules = [];
+                rules.push("/*Auto-generated file, do not modify !*/\n");
                 rules.push([containerId, " span { position: absolute; display: block; white-space: nowrap; transform-origin: 50% 40%; -webkit-transform-origin: 50% 40%; -ms-transform-origin: 50% 40%; } ", ].join(''));
                 
                 // $("#cloud_stylesheet").remove();
