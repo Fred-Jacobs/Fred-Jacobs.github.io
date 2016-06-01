@@ -153,6 +153,15 @@ ul {
     a:link:after, a:visited:after {
         content: "";
     }
+    
+    /*html {
+        width: 681;
+        border: none !important;
+    }
+    
+    body {
+        margin: 0;
+    }*/
 }
 
 
@@ -348,7 +357,7 @@ ul {
 }
 
 #other-container  {
-    top: 16px;
+    top: 22px;
 }
 #other-timeline .timeline-inverted {
     top: -26px;
