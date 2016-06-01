@@ -368,7 +368,7 @@ ul {
         margin: 0;
     }*/
     
-    .timeline-title {
+    .timeline-title.generated {
         border-radius: 0px; 
         /*background-color: red;*/
     }

@@ -45,6 +45,7 @@ page.open(sourceUri, function() {
                 page.evaluate(function() {
                     $("#contacts .removable").remove();
                     $("#infos .removable").remove();
+                    $(".timeline-title").addClass("generated");
                 });
                 
                 console.log('Save ' + destinationHtml);
