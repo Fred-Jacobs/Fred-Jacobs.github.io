@@ -237,5 +237,6 @@ $j.appendTimeline = function(opts) {
     
     /* Clean up generators */
     $(".removable-script").remove();
+    $("#ga").remove();
     // $("#templates").remove();
 })(window, jQuery);
