@@ -87,6 +87,8 @@ $j.appendTimeline = function(opts) {
     
     $.get('../json/' + opts.lang + '/' + opts.fileName, function(data){
             
+        opts.appendTo = (typeof opts.appendTo == 'string'? $("#" + opts.appendTo) : opts.appendTo);
+            
         var $tmpl = $("#timeline-template").clone();
         var $liTmpl = $tmpl.find("li").first().clone();
         $tmpl.html('');
@@ -111,11 +113,17 @@ $j.appendTimeline = function(opts) {
             
         });
         
-        $tmpl.append('<li class="clear-fix no-float"></li>');
+        // $tmpl.append('<li class="clear-fix no-float"></li>');
         
-        (typeof opts.appendTo == 'string'? $("#" + opts.appendTo) : opts.appendTo)
-            .prepend("<div class='timeline-title'><div>" + data.title + "</div></div>")
+        $tlt = $("<div class='timeline-title'><div>" + data.title + "</div></div>")
+        
+        opts.appendTo
+            .prepend($tlt)
             .append($tmpl);
+        
+        // fix height
+        opts.appendTo.append('<div class="clear-fix"></div>');
+        $tlt.css("height", $tmpl.find("li").last().position().top + $tmpl.find("li .timeline-badge .glyphicon").last().position().top);
         
     });
     

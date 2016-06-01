@@ -37,18 +37,22 @@ page.open(sourceUri, function() {
             });
         },
         success: function () {
-            console.log('Save ' + destinationPdf);
-            page.render(destinationPdf);
             
-            page.evaluate(function() {
-                $("#contacts .removable").remove();
-                $("#infos .removable").remove();
-            });
+            setTimeout(function() {
+                console.log('Save ' + destinationPdf);
+                page.render(destinationPdf);
+                
+                page.evaluate(function() {
+                    $("#contacts .removable").remove();
+                    $("#infos .removable").remove();
+                });
+                
+                console.log('Save ' + destinationHtml);
+                fs.write(destinationHtml, page.content, 'w');
+                
+                phantom.exit();
+            }, 100);
             
-            console.log('Save ' + destinationHtml);
-            fs.write(destinationHtml, page.content, 'w');
-            
-            phantom.exit();
         },
         error: function () {} 
     });
