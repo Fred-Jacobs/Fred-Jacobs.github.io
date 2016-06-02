@@ -46,13 +46,13 @@ page.open(sourceUri, function() {
                 page.evaluate(function() {
                     $("#contacts .removable").remove();
                     $("#infos .removable").remove();
+                    $("html").addClass("generated");
                 });
                 
                 console.log('Save public ' + destinationHtml);
                 fs.write(destinationHtml, page.content, 'w');
                 
                 page.evaluate(function() {
-                    $("html").addClass("generated");
                     $(".timeline-title").addClass("generated");
                 });
                 
