@@ -3,8 +3,9 @@ var system = require("system");
 var fs = require('fs');
 
 var sourceUri = system.args[1] || '../cv/template/cv.html';
-var destinationPdf = system.args[2] || '../cv/fr/Fred-Jacobs.dotNet.pdf';
-var destinationHtml = system.args[3] || '../cv/fr/index.html';
+var destinationPdf = system.args[2] || '../pdf/Fred-Jacobs.dotNet.pdf';
+var destinationPublicPdf = system.args[3] || '../cv/fr/Fred-Jacobs.dotNet.pdf';
+var destinationHtml = system.args[4] || '../cv/fr/index.html';
 
 page.paperSize = {
   format: "A4",
@@ -45,11 +46,18 @@ page.open(sourceUri, function() {
                 page.evaluate(function() {
                     $("#contacts .removable").remove();
                     $("#infos .removable").remove();
+                });
+                
+                console.log('Save public ' + destinationHtml);
+                fs.write(destinationHtml, page.content, 'w');
+                
+                page.evaluate(function() {
+                    $("html").addClass("generated");
                     $(".timeline-title").addClass("generated");
                 });
                 
-                console.log('Save ' + destinationHtml);
-                fs.write(destinationHtml, page.content, 'w');
+                console.log('Save public ' + destinationPublicPdf);
+                page.render(destinationPublicPdf);
                 
                 phantom.exit();
             }, 100);
