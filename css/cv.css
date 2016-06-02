@@ -1,7 +1,7 @@
 /* IDS */
 
 #title {
-    width: 50%;
+    width: 65%;
     text-align: center;
     margin: 0 auto;
 }
@@ -15,7 +15,7 @@
 
 #title .emphasis {
     white-space: nowrap;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     top: -0.9em;
     position: relative;
 }
@@ -216,7 +216,8 @@ ul {
     content:" ";
 }
 .timeline > li > .timeline-badge {
-    color: #dcdcdc;
+    /*color: #dcdcdc;*/
+    color: #aaa;
     width: 24px;
     height: 24px;
     line-height: 50px;
@@ -256,8 +257,10 @@ ul {
     color: inherit;
     position: absolute;
     left: 50%;
-    border-left: 2px solid #dcdcdc;
-    border-top: 2px solid #dcdcdc;
+    /*border-left: 2px solid #dcdcdc;
+    border-top: 2px solid #dcdcdc;*/
+    border-left: 2px solid #aaa;
+    border-top: 2px solid #aaa;
     /*border-right: 1px solid #dcdcdc;
     border-bottom: 1px solid #dcdcdc;*/
     border-top-left-radius: 12px;
