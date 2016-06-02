@@ -326,8 +326,11 @@ ul {
     margin-bottom: -5rem;
     margin-top: 6px;
 }
+#education-timeline li.timeline-normal {
+    top: 12px;
+}
 #education-timeline .timeline-inverted {
-    top: -30px;
+    top: -28px;
 }
 #education-timeline:before {
     /*margin-bottom: 3rem;*/
