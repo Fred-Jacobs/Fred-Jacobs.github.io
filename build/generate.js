@@ -28,13 +28,11 @@ page.open(sourceUri, function() {
         timeout: 10000,
         check: function () {
             return page.evaluate(function() {
-                $.each(finished, function(idx, item) {
-                    // console.log(item);
+                $.each($j.finished, function(idx, item) {
                     if (!item)
                         return false;
                 });
                 return true;
-                // return finished || false;
             });
         },
         success: function () {
@@ -54,6 +52,7 @@ page.open(sourceUri, function() {
                 
                 page.evaluate(function() {
                     $(".timeline-title").addClass("generated");
+                    $("#templates").remove();
                 });
                 
                 console.log('Save public ' + destinationPublicPdf);

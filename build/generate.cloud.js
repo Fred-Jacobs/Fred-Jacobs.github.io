@@ -26,7 +26,7 @@ page.open(sourceUri, function() {
         timeout: 10000,
         check: function () {
             return page.evaluate(function() {
-                if (finished && finished.cloud)
+                if ($j && $j.finished && $j.finished.cloud)
                     return true;
                     
                 return false;
