@@ -6,20 +6,12 @@ workbox.precaching.precacheAndRoute([
     "revision": "57ba7606f6a47281339ca733cca3a4c3"
   },
   {
+    "url": "/_nuxt/124d54e86f4063a9388a.js",
+    "revision": "bbe1e2cb4e3675aff08e095413e3c3d6"
+  },
+  {
     "url": "/_nuxt/27ca79bbeb96f22fff82.css",
     "revision": "ca46a14c807598d1b6e3f17232978a81"
-  },
-  {
-    "url": "/_nuxt/70f0512da8be578e115c.js",
-    "revision": "372ffc9a7556fb4e0e7cf05768de4cfc"
-  },
-  {
-    "url": "/_nuxt/845a74f7cc4fb2de175a.js",
-    "revision": "2bca5d75c8967fbd2b15f684dfedc1a9"
-  },
-  {
-    "url": "/_nuxt/8682b032cd5bb4a851c2.js",
-    "revision": "0c10b2a925fb1141490726ecac02435b"
   },
   {
     "url": "/_nuxt/9050a4e605850e87ab8a.css",
@@ -38,6 +30,14 @@ workbox.precaching.precacheAndRoute([
     "revision": "f9f6b08044209531caddc15d736cdec9"
   },
   {
+    "url": "/_nuxt/cc1ba5ca07864d1eb182.js",
+    "revision": "a8f7e5886b79707b7d92d17aa6c068e1"
+  },
+  {
+    "url": "/_nuxt/d5da9db9be74f57463c5.js",
+    "revision": "1e30ecb76ae1afefb6da0769b1cc7da5"
+  },
+  {
     "url": "/_nuxt/e4eddec5ee2d6871e239.css",
     "revision": "ef746172d1b4bf52f06481199bfe7501"
   },
@@ -46,7 +46,7 @@ workbox.precaching.precacheAndRoute([
     "revision": "685c3905e259ea3ea48f20bab6d1efc4"
   }
 ], {
-  "cacheId": "nuxt-Fred-Jacobs.github.io",
+  "cacheId": "fred-jacobs.github.io",
   "directoryIndex": "/",
   "cleanUrls": false
 })

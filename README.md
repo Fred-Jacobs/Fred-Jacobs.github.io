@@ -1,17 +1,18 @@
-# [Fred-Jacobs.github.io](http://Fred-Jacobs.github.io)
+# [Fred-Jacobs.github.io](http://fred-jacobs.github.io)
 
-# Build with :
-* VS Code
-* Nuxt as static site builder
-* Azure DevOps as CI/CD pipeline
-* GitHub as static web host
+|              |                                    |                                                        |
+| ------------ | ---------------------------------- | ------------------------------------------------------ |
+| VS Code      | IDE                                | https://code.visualstudio.com/                         |
+| Vue          | SPA progressive framework          | https://vuejs.org/guide/                               |
+| Nuxt         | static site generator for Vue      | https://nuxtjs.org/guide/                              |
+| Vuetify      | material design for vue            | https://vuetifyjs.com/getting-started/why-vuetify      |
+| Typescript   | statically typed javascript        | https://www.typescriptlang.org/                        |
+| Azure Repos  | Git                                | https://azure.microsoft.com/services/devops/repos/     |
+| Azure DevOps | Continuous Integration/Deployement | https://azure.microsoft.com/services/devops/pipelines/ |
+| GitHub Pages | static web host                    | https://pages.github.com/                              |
 
-## Technologies used :
-* Vue
-* Vuetify
-* Typescript
+## Why not just a blog ?
 
-# Why not just a blog ?
 I'm a developer, I love to work with developer tools :octocat:
 
-![.](https://github.com/Fred-Jacobs/Fred-Jacobs.github.io/raw/master/css/img/shadoks1.png "Pourquoi faire simple quand on peut faire compliqué ?")
+![.](https://github.com/Fred-Jacobs/Fred-Jacobs.github.io/raw/master/img/shadoks1.png 'Pourquoi faire simple quand on peut faire compliqué ?')
