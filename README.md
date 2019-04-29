@@ -1,6 +1,6 @@
 # [Fred-Jacobs.github.io](http://fred-jacobs.github.io)
 
-|              |                                    |                                                        |
+| Tool / Tech  |                                    |                                                        |
 | ------------ | ---------------------------------- | ------------------------------------------------------ |
 | VS Code      | IDE                                | https://code.visualstudio.com/                         |
 | Vue          | SPA progressive framework          | https://vuejs.org/guide/                               |
@@ -11,7 +11,7 @@
 | Azure DevOps | Continuous Integration/Deployement | https://azure.microsoft.com/services/devops/pipelines/ |
 | GitHub Pages | static web host                    | https://pages.github.com/                              |
 
-## Why not just a blog ?
+## Why not just a blog?
 
 I'm a developer, I love to work with developer tools :octocat:
 
